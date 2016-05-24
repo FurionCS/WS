@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.WS.pojo">
+  <class name="Ranges" table="T_WSBALANCE_Ranges">
+  	<id name="rid" column="rid">
+	 	<generator class="native" />
+  	</id>
+  	<property name="minnum" column="minnum" type="double"></property>
+  	<property name="maxnum" column="maxnum" type="double"></property>
+  	<property name="proportion" column="proportion" type="double"></property>
+  </class>
+</hibernate-mapping>

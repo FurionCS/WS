@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.WS.pojo">
+  <class name="Admin" table="T_WSBALANCE_ADMIN">
+  		<id name="adid" column="adid">
+	 		<generator class="native" />
+	 	</id>
+	 	<property name="adname" column="adname" type="string" length="20"></property>
+	 	<property name="adpassword" column="adpassword" type="string" length="20"></property>
+	 	<property name="adtel"  column="adtel" type="string" length="20"></property>
+	 	<property name="lasttime" column="lasttime" type="timestamp"></property>
+	 	<property name="power" column="power" type="integer"></property>
+  </class>
+</hibernate-mapping>

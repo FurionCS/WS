@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.WS.pojo">
+	 <class name="Agent" table="T_WSBALANCE_Agent"> 
+	 	<id name="agid" column="agid">
+	 		<generator class="native" />
+	 	</id>
+	 	<property name="agwxnum" column="agwxnum" type="string" length="100"></property>
+	 	<property name="agname" column="agname" type="string" length="10"></property>
+	 	<property name="agtel" column="agtel" type="string" length="20"></property>
+	 	<property name="agidcard" column="agidcard" type="string" length="18"></property>
+	 	<property name="agpid" column="agpid" type="integer"></property>
+	 	<property name="aglevel" column="aglevel" type="integer"></property>
+	 	<property name="agauthorization" column="agauthorization" type="string" length="50"></property>
+	 	<property name="agcreateday" column="agcreateday" type="timestamp"></property>
+	 	<property name="agpassword" column="agpassword" type="string" length="50"></property>
+	 	<property name="agstatus" column="agstatus" type="integer"></property>
+	 	<property name="agcount" column="agcount" type="integer"></property>
+	 </class> 
+
+</hibernate-mapping>

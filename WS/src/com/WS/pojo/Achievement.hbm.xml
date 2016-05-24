@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.WS.pojo">
+	 <class name="Achievement" table="T_WSBALANCE_ACHIEVEMENT"> 
+	 	<id name="aid" column="aid">
+	 		<generator class="native" />
+	 	</id>
+	 	<!--  用户和业绩一对一映射 -->
+      	<many-to-one name="agent" class="Agent" column="agent" unique="true"></many-to-one>
+	 	<property name="money" column="money" type="double"></property>
+	 	<property name="proportion" column="proportion" type="double"></property>
+	 	<property name="lasttime" column="lasttime" type="timestamp"></property>
+	 </class> 
+</hibernate-mapping>
