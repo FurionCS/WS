@@ -1,0 +1,55 @@
+#powerdiv{
+	text-align: center;
+	margin-top:30px;
+	position: relative;
+}
+#power{
+	width:100%;
+}
+#powerdiv b{
+	position: absolute;
+	font-style: normal;
+	color:rgb(112,108,107);
+	font-size: 12px;
+}
+#powernum{
+	top:24%;
+}
+#name{
+	top:29.1%;
+}
+#wx{
+	top:33.64%;
+}
+#type{
+	top:38.26%;
+	left:32.3%;
+}
+#level{
+	top:47.3%;
+	left:30.3%;
+}
+#startyear{
+	top:52.2%;
+	left:26.4%;
+}
+#startmonth{
+	top:52.2%;
+	left:39.5%;
+}
+#startday{
+	top:52.2%;
+	left:47.3%;
+}
+#endyear{
+	top:52.2%;
+	left:56.3%;
+}
+#endmonth{
+	top:52.2%;
+	left:67.5%;
+}
+#endday{
+	top:52.2%;
+	left:75.5%;
+}

@@ -18,6 +18,8 @@
 	 	<property name="agpassword" column="agpassword" type="string" length="50"></property>
 	 	<property name="agstatus" column="agstatus" type="integer"></property>
 	 	<property name="agcount" column="agcount" type="integer"></property>
+	 	<property name="agdeadline" column="agdeadline" type="timestamp"></property>
+	 	<property name="agtype" column="agtype" type="integer"></property>
 	 </class> 
 
 </hibernate-mapping>

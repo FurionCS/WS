@@ -19,6 +19,8 @@ public class Agent {
 	private String agpassword;    //代理密码
 	private int agstatus;           //代理状态1为在职，0为不在
 	private int agcount;     //下属代理数量
+	private Date agdeadline;     	 //授权过期时间
+	private int agtype;            //0为公司，1为个体户，2为个人
 	public int getAgid() {
 		return agid;
 	}
@@ -91,7 +93,17 @@ public class Agent {
 	public int getAgcount() {
 		return agcount;
 	}
-	
-	
+	public Date getAgdeadline() {
+		return agdeadline;
+	}
+	public void setAgdeadline(Date agdeadline) {
+		this.agdeadline = agdeadline;
+	}
+	public int getAgtype() {
+		return agtype;
+	}
+	public void setAgtype(int agtype) {
+		this.agtype = agtype;
+	}
 	
 }

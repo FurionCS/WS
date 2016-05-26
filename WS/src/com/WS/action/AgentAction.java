@@ -94,6 +94,7 @@ public class AgentAction extends ActionSupport implements SessionAware,ServletRe
 		JSONObject jb =new JSONObject();
 		if(lg.size()>0){
 			jb.put("code", 1);
+			session.put("pagent", lg.get(0));
 			jb.put("agent", lg.get(0));
 		}else{
 			jb.put("code", 0);

@@ -44,7 +44,7 @@
   </init-param>
   <init-param>
        <param-name>notCheckURLList</param-name> 
-       <param-value>/Error/Error404.jsp;/login.jsp;/Serach.jsp;/ChangePassword.jsp</param-value> 
+       <param-value>/Error/Error404.jsp;/login.jsp;/Serach.jsp;/ChangePassword.jsp;/SerachResult.jsp</param-value> 
   </init-param>
    
  </filter>
