@@ -56,7 +56,6 @@ function login(){
 				   if(result.code==1){
 					   location.href="Achievement.jsp";
 				   }else{
-					   alert("账号密码错啦");
 					   $("#tip").html("账号或密码不正确");
 				   }
 			      },

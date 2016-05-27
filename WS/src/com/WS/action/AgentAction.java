@@ -17,6 +17,7 @@ import net.sf.json.JSONObject;
 import org.apache.struts2.interceptor.ServletResponseAware;
 import org.apache.struts2.interceptor.SessionAware;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import com.WS.pojo.Agent;
@@ -24,7 +25,7 @@ import com.WS.pojo.Page;
 import com.WS.service.AgentService;
 import com.opensymphony.xwork2.ActionSupport;
 
-
+@Scope("prototype")
 @Controller
 public class AgentAction extends ActionSupport implements SessionAware,ServletResponseAware{
 	private Agent agent;
