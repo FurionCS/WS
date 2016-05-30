@@ -24,10 +24,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form>
 <div id="formbody">
 	<div class="inputdiv">
-      <label for="wxnum">微信号</label>
+      <label for="wxnum">微信号:</label>
   	  <input name="wxnum" type="text" id="wxnum" class="input" placeholder="请填写您的微信号"/><br >   </div>
      <div class="inputdiv">
-      <label for="password">密码</label>
+      <label for="password">密码:</label>
    	   <input name="password" type="password" id="password"  class="input" placeholder="请填写您的密码"/> 	  
  </div>
   <p id="tip"></p>

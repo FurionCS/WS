@@ -33,23 +33,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 	<div id="powerdiv" style="display:none">
    		<img id="power" alt="代理授权书图片" src="img/power.png">
-   		<b id="powernum">cd000</b>
+   		<b id="powernum"></b>
    		<b id="name"></b>
    		<b id="wx"></b>
-   		<b id="type">个人</b>
-   		<b id="level">总代</b>
-   		<b id="startyear">2014</b>
-   		<b id="startmonth">02</b>
-   		<b id="startday">20</b>
-   		<b id="endyear">2016</b>
-   		<b id="endmonth">12</b>
-   		<b id="endday">31</b>
+   		<b id="type"></b>
+   		<b id="level"></b>
+   		<b id="agstartyear"></b>
+   		<b id="agstartmonth"></b>
+   		<b id="agstartday"></b>
+   		<b id="agendyear"></b>
+   		<b id="agendmonth"></b>
+   		<b id="agendday"></b>
     </div>
 </body> 
 <script src="js/jquery-1.9.1.js"type="text/javascript"></script>
 <script>
 function getYear(Time){
-		return new Date(parseInt(Time.time,10)).getFullYear();
+	return new Date(parseInt(Time.time,10)).getFullYear();
 }
 function getMonth(Time){
 	return new Date(parseInt(Time.time,10)).getMonth()+1;
@@ -78,12 +78,12 @@ function searchAgent(){
 					   else{$("#type").html("个人");}
 					   if(agent.aglevel==0){$("#level").html("总代");}
 					   else{$("#level").html(agent.aglevel+"级代理")}
-					   $("#startyear").html(getYear(agent.agcreateday));
-					   $("#startmonth").html(getMonth(agent.agcreateday));
-					   $("#startday").html(getDay(agent.agcreateday));
-					   $("#endyear").html(getYear(agent.agdeadline));
-					   $("#endmonth").html(getMonth(agent.agdeadline));
-					   $("#endday").html(getDay(agent.agdeadline));
+					   $("#agstartyear").html(getYear(agent.agcreateday));
+					   $("#agstartmonth").html(getMonth(agent.agcreateday));
+					   $("#agstartday").html(getDay(agent.agcreateday));
+					   $("#agendyear").html(getYear(agent.agdeadline));
+					   $("#agendmonth").html(getMonth(agent.agdeadline));
+					   $("#agendday").html(getDay(agent.agdeadline));
 					   $("#powernum").html(agent.agauthorization);
 				   }else{
 					   $("#tip").html("该微信号没有授权");

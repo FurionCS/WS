@@ -16,20 +16,23 @@ body{
 	padding:5px 10px;
 }
 label{
+	display:block;
 	font-size:16px;
+	width:70px;
 }
 #wxnum{
 	box-flex:1;-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;
     flex:1;
 	background-color:rgba(0,0,0,0);
 	border:none;
-	border-bottom:1px solid #999;
+	
 	color:#fff;
 	outline:none;
 }
 .inputdiv{
 	display:box;display:-moz-box;display:-webkit-box;display:-ms-box;
     display:flex;display:-webkit-flex;
+    border-bottom:1px solid #999;
 }
 #tip{
 	height:40px;
@@ -41,8 +44,9 @@ label{
 	background:rgb(27,127,233);
 	border:1px solid rgb(27,127,233);
 	border-radius:5px;
-	padding:5px 0px;
+	padding:10px 0px;
 	color:#fff;
+	font-size:16px;
 	letter-spacing:10px;
 	text-align: center;
 }
