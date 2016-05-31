@@ -18,6 +18,8 @@ background:rgb(54,50,64);
 	padding:10px 0px;
 	background-color:rgb(240,240,240);
 	font-size:16px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 
 }
 #formbody{

@@ -25,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<h2>我的组织树型图</h2>
-  	<ul id="treeDemo" class="ztree"></ul>
+  	<ul id="treeDemo" class="ztree mytree"></ul>
   	<script src="js/jquery-1.9.1.js"type="text/javascript"></script>
   	<script src="js/jquery.ztree.core.js"></script>
   	<script>
