@@ -54,7 +54,7 @@ function login(){
 			   dataType: "json",
 			   success: function (result) {
 				   if(result.code==1){
-					   location.href="Achievement.jsp";
+					   location.href="Catalog.jsp";
 				   }else{
 					   $("#tip").html("账号或密码不正确");
 				   }

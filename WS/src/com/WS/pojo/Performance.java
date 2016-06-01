@@ -9,14 +9,21 @@ public class Performance implements Serializable{
 	private double money;
 	private double team;
 	private double personmoney;
+	private double moneyperson; //个人业绩
+	public double getMoneyperson() {
+		return moneyperson;
+	}
+
+	public void setMoneyperson(double moneyperson) {
+		this.moneyperson = moneyperson;
+	}
 	private int agpid;
 	
 	public Performance() {
 		super();
 	}
-	
 	public Performance(int agid, String agname, String agwxnum, double money,
-			double team, double personmoney, int agpid) {
+			double team, double personmoney, double moneyperson, int agpid) {
 		super();
 		this.agid = agid;
 		this.agname = agname;
@@ -24,6 +31,7 @@ public class Performance implements Serializable{
 		this.money = money;
 		this.team = team;
 		this.personmoney = personmoney;
+		this.moneyperson = moneyperson;
 		this.agpid = agpid;
 	}
 

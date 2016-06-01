@@ -10,7 +10,8 @@ import java.util.Date;
 public class Achievement {
 	private int aid;       //业绩id
 	private Agent agent;  //总代ID
-	private double money;  //业绩
+	private double money;  //团队业绩
+	private	double personmoney;//个人业绩
 	private double proportion;  //比例
 	private Date lasttime;      //最新更新时间
 	public int getAid() {
@@ -43,5 +44,10 @@ public class Achievement {
 	public void setLasttime(Date lasttime) {
 		this.lasttime = lasttime;
 	}
-	
+	public double getPersonmoney() {
+		return personmoney;
+	}
+	public void setPersonmoney(double personmoney) {
+		this.personmoney = personmoney;
+	}
 }

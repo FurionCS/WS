@@ -51,7 +51,8 @@ function getAchievement(){
 					 html+="<p><b>您的微信号：</b><span>"+achievement.agwxnum+"</span></p>";
 					 html+="<p><b>您本月的团队业绩：</b><span>"+achievement.money+"</span></p>";
 					 html+="<p><b>您本月的团队奖金：</b><span>"+achievement.team+"</span></p>";
-					 html+="<p><b>您本月的个人奖金：</b><span>"+achievement.personmoney+"</span></p>";
+					 html+="<p><b>您本月的个人业绩：</b><span>"+achievement.personmoney+"</span></p>";
+					 html+="<p><b>您本月的个人奖金：</b><span>"+achievement.moneyperson+"</span></p>";
 					 $("#achbody").html(html);
 					 var html2="<p><b>您的下属总代业绩：</b></p>";
 					 if(achievementTeam.length>0){

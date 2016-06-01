@@ -107,7 +107,7 @@ public class AchievementDao extends BaseDao{
 			Iterator it=list.iterator();
 			while(it.hasNext()){
 				Object[] obj=(Object[]) it.next();
-				Performance p=new Performance(Integer.parseInt(String.valueOf(obj[0])),(String)obj[1],(String)obj[2],Double.parseDouble(String.valueOf(obj[3])),Double.parseDouble(String.valueOf(obj[4])),Double.parseDouble(String.valueOf(obj[5])),Integer.parseInt(String.valueOf(obj[6])));
+				Performance p=new Performance(Integer.parseInt(String.valueOf(obj[0])),(String)obj[1],(String)obj[2],Double.parseDouble(String.valueOf(obj[3])),Double.parseDouble(String.valueOf(obj[4])),Double.parseDouble(String.valueOf(obj[5])),Double.parseDouble(String.valueOf(obj[6])),Integer.parseInt(String.valueOf(obj[7])));
 				lp.add(p);
 			}
 		}catch(Exception e){
@@ -127,7 +127,7 @@ public class AchievementDao extends BaseDao{
 			Iterator it=list.iterator();
 			while(it.hasNext()){
 				Object[] obj=(Object[]) it.next();
-				Performance p=new Performance(Integer.parseInt(String.valueOf(obj[0])),(String)obj[1],(String)obj[2],Double.parseDouble(String.valueOf(obj[3])),Double.parseDouble(String.valueOf(obj[4])),Double.parseDouble(String.valueOf(obj[5])),Integer.parseInt(String.valueOf(obj[6])));
+				Performance p=new Performance(Integer.parseInt(String.valueOf(obj[0])),(String)obj[1],(String)obj[2],Double.parseDouble(String.valueOf(obj[3])),Double.parseDouble(String.valueOf(obj[4])),Double.parseDouble(String.valueOf(obj[5])),Double.parseDouble(String.valueOf(obj[6])),Integer.parseInt(String.valueOf(obj[7])));
 				lp.add(p);
 			}
 		}catch(Exception e){
