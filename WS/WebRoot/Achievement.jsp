@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div id="achTeambody">
     </div>
     <div id="contact">
-    	<p>若有疑问请联系微信：cs950211 或者直接致电：15381432412</p>
+    	<p>若有疑问请联系微信：znlxyj 或者直接致电：<b>13858846190</b></p>
     </div>
 </div>
 <script src="js/jquery-1.9.1.js"type="text/javascript"></script>
@@ -65,8 +65,9 @@ function getAchievement(){
 					$("#achTeambody").html(html2);
 					 
 				   }else{
-					   alert("账号密码错啦");
-					   $("#tip").html("账号或密码不正确");
+					 /*   alert("账号密码错啦"); */
+					   $("#achbody").html("您暂无业绩");
+					  $("#achTeambody").html("您暂无下属");
 				   }
 			      },
 			   error:function(XMLHttpRequest, textStatus, errorThrown) {
