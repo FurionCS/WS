@@ -31,9 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     <div id="achTeambody">
     </div>
-    <div id="contact">
-    	<p>若有疑问请联系微信：znlxyj 或者直接致电：<b>13858846190</b></p>
-    </div>
+    
 </div>
 <script src="js/jquery-1.9.1.js"type="text/javascript"></script>
 <script>
@@ -57,7 +55,7 @@ function getAchievement(){
 					 var html2="<p><b>您的下属总代业绩：</b></p>";
 					 if(achievementTeam.length>0){
 						 for(var i=0;i<achievementTeam.length;i++){
-							 html2+="<p><b>"+achievementTeam[i].agname+"</b><b>团队业绩：</b><span>"+achievementTeam[i].team+"</span></p>";
+							 html2+="<p><b>"+achievementTeam[i].agname+"</b><b>团队业绩：</b><span>"+achievementTeam[i].money+"</span></p>";
 						 }
 					 }else{
 						 html2="<p>您还没有下属总代业绩</p>";
